@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: d6ae566ad8b914741a2acad29fbf01f4
+=======
+guid: a0fa43a219cd6c943bb3b0b418ce9be2
+>>>>>>> remotes/origin/Dev-Vitaliy
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
