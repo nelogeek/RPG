@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -12,8 +13,6 @@ public class Menu : MonoBehaviour
     public Image MusicButton;
     public bool isOn;
     public AudioSource ad;
-
-
 
     void Start()
     {
@@ -62,9 +61,5 @@ public class Menu : MonoBehaviour
         Debug.Log("Игра закрылась");
         Application.Quit();
     }
-
-    public void Switch()
-    {
-        
-    }
+    
 }
