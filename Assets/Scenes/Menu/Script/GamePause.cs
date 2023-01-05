@@ -6,7 +6,7 @@ public class GamePause : MonoBehaviour
 {
     public static bool isPause = false;
 
-    public GameObject escapeMenus;
+    public GameObject escapeMenu;
     void Start()
     {
         
@@ -29,22 +29,23 @@ public class GamePause : MonoBehaviour
             } 
         }
     }
-    void Pause()
+    public void Pause()
     {
-        escapeMenus.SetActive(true);
+        escapeMenu.SetActive(true);
         Time.timeScale = 0f;
         isPause = true;
     }
 
-    void Resume()
+    public void Resume()
     {
-        escapeMenus.SetActive(false);
+        escapeMenu.SetActive(false);
         Time.timeScale = 1f;
         isPause = false;
         Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
-    void Exit()
+    public void Exit()
     {
         Application.Quit();
     }
