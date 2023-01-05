@@ -388,6 +388,7 @@ public class FirstPersonController : MonoBehaviour
 
             if (hit.transform.tag == "Enemy")
             {
+                
 
                 if (Input.GetKeyDown(KeyCode.Mouse0))
                 {

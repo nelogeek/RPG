@@ -17,7 +17,9 @@ public class EnemyController : MonoBehaviour
 
     private float curHealth;
     [SerializeField] private int maxHealth;
-    
+
+    public float detectionDistance = 20f;
+
 
     void Start()
     {
@@ -34,7 +36,7 @@ public class EnemyController : MonoBehaviour
         if (alive)
         {
             distance = Vector3.Distance(target.position, transform.position);
-            if (distance > 13)
+            if (distance > detectionDistance)
             {
                 agent.enabled = false;
                 //animator.Play("wait");
@@ -42,7 +44,7 @@ public class EnemyController : MonoBehaviour
             }
            
 
-            if (2f < distance && distance < 13)
+            if (2f < distance && distance < detectionDistance)
             {
                 agent.enabled = true;
                 agent.SetDestination(target.position);
