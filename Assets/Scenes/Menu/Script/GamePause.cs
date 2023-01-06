@@ -7,9 +7,10 @@ public class GamePause : MonoBehaviour
     public static bool isPause = false;
 
     public GameObject escapeMenu;
+    public FirstPersonController p;
     void Start()
     {
-        
+       p = GetComponent<FirstPersonController>();
     }
 
     // Update is called once per frame
@@ -34,6 +35,7 @@ public class GamePause : MonoBehaviour
         escapeMenu.SetActive(true);
         Time.timeScale = 0f;
         isPause = true;
+        p.enabled= false;
     }
 
     public void Resume()
@@ -43,6 +45,7 @@ public class GamePause : MonoBehaviour
         isPause = false;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        p.enabled = true;
     }
 
     public void Exit()

@@ -36,9 +36,9 @@ Material:
     - _OutlineSoftness: 0.335
     - _OutlineWidth: 0
     - _PerspectiveFilter: 0.875
-    - _ScaleRatioA: 0.8
+    - _ScaleRatioA: 0.84905654
     - _ScaleRatioB: 1
-    - _ScaleRatioC: 0.19125
+    - _ScaleRatioC: 0.24749999
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0

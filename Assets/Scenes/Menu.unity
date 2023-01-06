@@ -1965,8 +1965,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48eba901ec6015d4eb835341ce92251f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onMusic: {fileID: 0}
-  offMusic: {fileID: 0}
-  MusicButton: {fileID: 0}
+  onMusic: {fileID: 21300000, guid: 47683e12e962ba649b9780d99779e6cf, type: 3}
+  offMusic: {fileID: 21300000, guid: 4e47b0eda79803c4387d6f90b31aa652, type: 3}
+  MusicButton: {fileID: 193341905}
   isOn: 0
-  ad: {fileID: 0}
+  ad: {fileID: 1957121390}
