@@ -15,7 +15,7 @@ public class EnemyController : MonoBehaviour
     public Image fill;
     public Image healthBar;
 
-    private float curHealth;
+    public float curHealth;
     [SerializeField] private int maxHealth;
 
     public float detectionDistance = 20f;
